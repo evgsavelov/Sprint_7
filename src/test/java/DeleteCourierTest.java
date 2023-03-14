@@ -1,3 +1,7 @@
+import Client.Courier;
+import Client.CourierClient;
+import Client.CourierCredentials;
+import Util.CourierGenerator;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
 import org.junit.Before;

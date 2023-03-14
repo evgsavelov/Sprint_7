@@ -1,3 +1,5 @@
+package Model;
+
 public class CourierId {
     private Integer id;
 

@@ -1,3 +1,5 @@
+package Model;
+
 public class OrderData {
     private Integer id;
     private Integer track;

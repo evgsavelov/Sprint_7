@@ -1,3 +1,7 @@
+package Util;
+
+import Client.Courier;
+
 import java.util.Random;
 
 public class CourierGenerator {

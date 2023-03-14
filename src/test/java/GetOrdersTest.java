@@ -1,5 +1,6 @@
+import Client.OrdersClient;
+import Model.OrderData;
 import io.qameta.allure.junit4.DisplayName;
-import io.restassured.http.ContentType;
 import org.junit.Assert;
 import org.junit.Test;
 

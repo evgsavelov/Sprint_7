@@ -1,3 +1,7 @@
+import Client.Courier;
+import Client.CourierClient;
+import Client.CourierCredentials;
+import Util.CourierGenerator;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
@@ -37,9 +41,8 @@ public class LoginCourierTest {
     }
 
     @Test
-    @DisplayName("Courier can successfully login with correct credentials")
+    @DisplayName("Client.Courier can successfully login with correct credentials")
     @Description("Basic test for /api/v1/courier/login endpoint. Response: 200")
-
     public void courierCanLoginWithCorrectCredentials() {
 
         courierClient.create(courier);
@@ -53,9 +56,8 @@ public class LoginCourierTest {
 
     //система вернёт ошибку, если неправильно указать логин или пароль;
     @Test
-    @DisplayName("Courier can't login without password'")
+    @DisplayName("Client.Courier can't login without password'")
     @Description("Basic test for /api/v1/courier/login endpoint. Response: 400")
-
     public void courierCanNotLoginWithoutPassword() {
         courier = CourierGenerator.getRandomOnlyLogin();
         ValidatableResponse loginResponse = courierClient.login(CourierCredentials.from(courier));
@@ -66,9 +68,8 @@ public class LoginCourierTest {
     }
 
     @Test
-    @DisplayName("Courier can't login without login'")
+    @DisplayName("Client.Courier can't login without login'")
     @Description("Basic test for /api/v1/courier/login endpoint. Response: 400")
-
     public void courierCanNotLoginWithoutLogin() {
         courier = CourierGenerator.getRandomOnlyPassword();
         ValidatableResponse loginResponse = courierClient.login(CourierCredentials.from(courier));
