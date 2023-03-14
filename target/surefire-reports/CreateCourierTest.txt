@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: CreateCourierTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 7.316 s <<< FAILURE! - in CreateCourierTest
+courierCantBeWithoutFirstName(CreateCourierTest)  Time elapsed: 0.3 s  <<< FAILURE!
+java.lang.AssertionError: expected:<400> but was:<201>
+	at CreateCourierTest.courierCantBeWithoutFirstName(CreateCourierTest.java:101)
+
+courierCantBeWithTheSameLogin(CreateCourierTest)  Time elapsed: 0.232 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...гин уже используется[]> but was:<...гин уже используется[. Попробуйте другой.]>
+	at CreateCourierTest.courierCantBeWithTheSameLogin(CreateCourierTest.java:115)
+
+courierCantBeTheSame(CreateCourierTest)  Time elapsed: 0.2 s  <<< ERROR!
+java.lang.NullPointerException
+	at CreateCourierTest.courierCantBeTheSame(CreateCourierTest.java:61)
+
